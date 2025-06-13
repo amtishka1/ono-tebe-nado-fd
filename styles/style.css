@@ -1,1 +1,263 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 1100px;
+  height: 293px;
+}
+
+.header-nav {
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 6px;
+  margin-left: 11px;
+}
+
+.header-nav a:first-child {
+  text-decoration: none;
+}
+
+.header-separator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 0.5px solid black;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 10px;
+}
+
+.header > .contacts {
+  margin-left: 136px;
+  margin-bottom: 3px;
+}
+
+.contacts {
+  display: grid;
+  grid-template-rows: repeat(3, 24px);
+  width: 240px;
+  height: 98px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contacts a,
+.contacts address {
+  line-height: 24.3px;
+}
+
+#header-logo {
+  width: 148px;
+  height: 105px;
+}
+
+.cover {
+  position: relative;
+  width: 1100px;
+  height: 757px;
+  margin-bottom: 180px;
+}
+
+.cover-img {
+  position: absolute;
+  height: 757px;
+  filter: brightness(40%);
+}
+
+.cover-container {
+  position: absolute;
+  display: grid;
+  padding: 165px 20px 50px 50px;
+  grid-template-rows: auto;
+  row-gap: 106px;
+  width: 100%;
+  height: 100%;
+}
+
+.cover-title-2 {
+  justify-self: center;
+}
+.cover-title-3 {
+  justify-self: end;
+}
+
+.cover-title {
+  height: 385px;
+  display: grid;
+  font-size: 100px;
+  row-gap: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 30.5px;
+}
+
+.cover-description {
+  height: 51px;
+  align-self: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 256px;
+  padding-right: 30px;
+}
+
+.cover-description > p {
+  padding: 12px 0 11px 0;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 18.4px;
+}
+
+.cover-description > button {
+  width: 256px;
+  height: 51px;
+  background: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+}
+
+.lots {
+  margin-bottom: 120px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.lots-title {
+  padding: 0 0 30px 40px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: uppercase;
+  padding-top: 3px;
+}
+.lots-items {
+  display: grid;
+  grid-template-columns: repeat(3, 334px);
+  column-gap: 25px;
+}
+
+.lots-item {
+  position: relative;
+  width: 334px;
+  height: 596px;
+  list-style: none;
+}
+
+.lots-container > img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
+
+.lots-container > article {
+  position: absolute;
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  height: 100%;
+}
+
+.lots-item-title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: 48px 40px 0 40px;
+  color: #ffffff;
+  align-self: flex-start;
+}
+
+.lots-item-text {
+  padding: 0 40px 48px 40px;
+  font-size: 20px;
+  color: #ffffff;
+  align-self: flex-end;
+}
+
+.lots-link {
+  margin: 30px 0 0 40px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  padding-top: 35px;
+  padding-left: 47px;
+  column-gap: 72px;
+  height: 595px;
+  margin-bottom: 180px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.about-logo-container {
+  background-color: black;
+  width: 240px;
+  height: 240px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.about-logo-container > img {
+  position: absolute;
+  width: 148px;
+  height: 114px;
+  top: 64px;
+  left: 46.48px;
+}
+
+.about-container {
+  width: 693px;
+  align-self: flex-end;
+}
+
+.about-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+
+.about-description {
+  font-size: 20px;
+}
+
+.about-description > div:first-child {
+  margin-bottom: 24px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 0.81fr 1fr 0.81fr;
+  justify-items: center;
+  align-items: start;
+  height: 180px;
+  padding: 0;
+  font-size: 18px;
+}
+
+.footer > .menu {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  column-gap: 48px;
+}
+
+.socials-icons {
+  width: 48px;
+}
